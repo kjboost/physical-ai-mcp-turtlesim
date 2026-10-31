@@ -2,22 +2,13 @@
 
 ## 1. プロジェクトの概要
 
-本プロジェクトでは、松尾研Physical AI応用1講座で使用したROS 2環境を利用し、ローカルLLMからMCP（Model Context Protocol）を介してTurtleSimを操作するシステムを構成した。
+本プロジェクトでは、松尾研Physical AI応用1講座で使用したROS2環境を利用し、ローカルLLMからMCP（Model Context Protocol）を介してTurtleSimを操作するシステムを構成した。
 
-### 1.1 講義で使用した環境
+### 1.1 講義で使用したROS 2環境
 
-第4回講義では、ROS 2 HumbleのDocker環境でTurtleSimを使用し、以下の操作を学習した。
+本プロジェクトでは、松尾研Physical AI応用1講座で使用したROS2 HumbleのDocker環境を、最終課題の実行基盤として再利用した。
 
-- `turtlesim_node` の起動
-- `turtle_teleop_key` による遠隔操作
-- `ros2 topic list` によるトピック一覧の確認
-- `ros2 topic echo` による通信データの確認
-- `ros2 topic type` によるメッセージ型の確認
-- ROS 2アクションのフィードバック確認
-
-第5回講義では、TurtleSimを用いてrosbagによる通信データの記録・再生を学習した。
-
-本プロジェクトでは、この講義環境を最終課題の実行基盤として再利用した。
+この環境にrosbridge_serverを追加し、WSL2上のMCPサーバおよびWindows上のローカルLLMと接続することで、自然言語によるTurtleSim操作を実現した。
 
 使用したDockerイメージ：
 

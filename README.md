@@ -18,12 +18,12 @@ Windows上のLM Studioで動作する **Gemma 4 E4B** が、MCPサーバー `ros
 ```text
 Windows 11
 ├── LM Studio
-│   └── Gemma 4 E4B
+│   └── Gemma-4-E4B
 ├── WSL2（Ubuntu 22.04）
 │   └── ros-mcp（MCPサーバー、uvx経由）
 └── Docker Desktop（WSL2バックエンド）
     └── pai_ros2 コンテナ
-        ├── ROS 2 Humble
+        ├── ROS2 Humble
         ├── rosbridge_server（WebSocket :9090）
         └── turtlesim
 ```
@@ -32,11 +32,11 @@ Windows 11
 
 ```text
 自然言語の指示
-  → Gemma 4 E4B（LM Studio）
+  → Gemma-4-E4B（LM Studio）
   → MCPツール呼び出し
   → ros-mcp（WSL2）
   → rosbridge（WebSocket）
-  → ROS 2
+  → ROS2
   → TurtleSim
 ```
 
@@ -55,7 +55,7 @@ Windows 11
 | シミュレータ | TurtleSim |
 | コンテナ | Docker Desktop |
 
-## 4. 使用したROS 2インターフェース
+## 4. 使用したROS2インターフェース
 
 ### 4.1 直進
 

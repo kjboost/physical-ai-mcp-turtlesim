@@ -4,7 +4,7 @@
 
 本プロジェクトは、ローカルLLMとModel Context Protocol（MCP）を利用し、自然言語の指示からROS2上のTurtleSimを操作する実験です。
 
-Windows上のLM Studioで動作する **Gemma-4-E4B** が、MCPサーバー `ros-mcp` と `rosbridge` を介してROS 2のトピックおよびアクションを呼び出し、亀に正方形を描画させることを目標としました。
+Windows上のLM Studioで動作する **Gemma 4 E4B** が、MCPサーバー `ros-mcp` と `rosbridge` を介してROS 2のトピックおよびアクションを呼び出し、亀に正方形を描画させることを目標としました。
 
 主に次の2点を検証しました。
 
@@ -18,12 +18,12 @@ Windows上のLM Studioで動作する **Gemma-4-E4B** が、MCPサーバー `ros
 ```text
 Windows 11
 ├── LM Studio
-│   └── Gemma-4-E4B
+│   └── Gemma 4 E4B
 ├── WSL2（Ubuntu 22.04）
 │   └── ros-mcp（MCPサーバー、uvx経由）
 └── Docker Desktop（WSL2バックエンド）
     └── pai_ros2 コンテナ
-        ├── ROS2 Humble
+        ├── ROS 2 Humble
         ├── rosbridge_server（WebSocket :9090）
         └── turtlesim
 ```
@@ -32,11 +32,11 @@ Windows 11
 
 ```text
 自然言語の指示
-  → Gemma-4-E4B（LM Studio）
+  → Gemma 4 E4B（LM Studio）
   → MCPツール呼び出し
   → ros-mcp（WSL2）
   → rosbridge（WebSocket）
-  → ROS2
+  → ROS 2
   → TurtleSim
 ```
 
@@ -47,10 +47,10 @@ Windows 11
 | OS | Windows 11 |
 | Linux環境 | WSL2 / Ubuntu 22.04 |
 | LLM実行環境 | LM Studio |
-| LLM | Gemma-4-E4B |
+| LLM | Gemma 4 E4B |
 | ツール連携 | Model Context Protocol（MCP） |
 | MCPサーバー | ros-mcp |
-| ロボットミドルウェア | ROS2 Humble |
+| ロボットミドルウェア | ROS 2 Humble |
 | ROS通信 | rosbridge_server |
 | シミュレータ | TurtleSim |
 | コンテナ | Docker Desktop |

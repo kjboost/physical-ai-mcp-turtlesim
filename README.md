@@ -55,7 +55,7 @@ Windows 11
 | シミュレータ | TurtleSim |
 | コンテナ | Docker Desktop |
 
-## 4. 使用したROS2インターフェース
+## 4. 使用したROS 2インターフェース
 
 ### 4.1 直進
 

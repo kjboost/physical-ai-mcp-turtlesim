@@ -2,9 +2,9 @@
 
 ## 1. 概要
 
-本プロジェクトは、ローカルLLMとModel Context Protocol（MCP）を利用し、自然言語の指示からROS 2上のTurtleSimを操作する実験です。
+本プロジェクトは、ローカルLLMとModel Context Protocol（MCP）を利用し、自然言語の指示からROS2上のTurtleSimを操作する実験です。
 
-Windows上のLM Studioで動作する **Gemma 4 E4B** が、MCPサーバー `ros-mcp` と `rosbridge` を介してROS 2のトピックおよびアクションを呼び出し、亀に正方形を描画させることを目標としました。
+Windows上のLM Studioで動作する **Gemma-4-E4B** が、MCPサーバー `ros-mcp` と `rosbridge` を介してROS 2のトピックおよびアクションを呼び出し、亀に正方形を描画させることを目標としました。
 
 主に次の2点を検証しました。
 
@@ -47,10 +47,10 @@ Windows 11
 | OS | Windows 11 |
 | Linux環境 | WSL2 / Ubuntu 22.04 |
 | LLM実行環境 | LM Studio |
-| LLM | Gemma 4 E4B |
+| LLM | Gemma-4-E4B |
 | ツール連携 | Model Context Protocol（MCP） |
 | MCPサーバー | ros-mcp |
-| ロボットミドルウェア | ROS 2 Humble |
+| ロボットミドルウェア | ROS2 Humble |
 | ROS通信 | rosbridge_server |
 | シミュレータ | TurtleSim |
 | コンテナ | Docker Desktop |
@@ -175,7 +175,7 @@ B-5で使用したプロンプト：[`prompts/autonomous_square_b5.md`](prompts/
 
 ## 7. AIを使用した部分と考察
 
-Gemma 4 E4Bを、文章生成だけでなく、MCPツールを通じたROS 2操作の実行主体として利用しました。
+Gemma-4-E4Bを、文章生成だけでなく、MCPツールを通じたROS2操作の実行主体として利用しました。
 
 今回の試行から、少なくとも次の課題が明らかになりました。
 

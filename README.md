@@ -2,9 +2,9 @@
 
 ## 1. 概要
 
-本プロジェクトは、ローカルLLMとModel Context Protocol（MCP）を利用し、自然言語の指示からROS2上のTurtleSimを操作する実験である。
+本プロジェクトは、ローカルLLMとModel Context Protocol（MCP）を利用し、自然言語の指示からROS2上のTurtleSimを操作したものである。
 
-Windows上のLM Studioで動作する **Gemma 4 E4B** が、MCPサーバー `ros-mcp` と `rosbridge` を介してROS 2のトピックおよびアクションを呼び出し、亀に正方形を描画させることを目標とた。
+Windows上のLM Studioで動作する **Gemma 4 E4B** が、MCPサーバー `ros-mcp` と `rosbridge` を介してROS 2のトピックおよびアクションを呼び出し、亀に正方形を描画させることを目標とした。
 
 主に次の2点を検証した。
 
@@ -233,6 +233,6 @@ physical-ai-mcp-turtlesim/
 - `/turtle1/pose` を途中で取得し、位置・姿勢の誤差を使う閉ループ制御を検討する。
 - ツール呼び出しエラー時の再計画とリカバリーを検討する。
 
-## 10. 実験日
+## 10. 評価・実験日
 
 2026年10月29日〜31日（記録整理を含む）
